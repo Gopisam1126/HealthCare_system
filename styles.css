@@ -7,6 +7,8 @@
     --mainFontSize: 5rem;
     --subHeadSize: 2.85rem;
     --sideFontSize: 1.5rem;
+    --leftMargin: 25rem;
+    --subFontSize: 2.2rem;
 }
 *{
     margin: 0;
@@ -180,6 +182,7 @@ button:hover .button-text {
     /* padding: 4.5rem 4.5rem 0 4.5rem; */
     background-color: var(--subColor1);
     /* width: 0; */
+    z-index: 2;
 }
 .sideBar{
     margin: 10rem 3.5rem 3.5rem 3.5rem;
@@ -203,4 +206,44 @@ button:hover .button-text {
 .navMoreIcon{
     position: relative;
     top: 0.35rem;
+}
+/* .asd{
+    background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0) 100%);
+} */
+
+/* Numbers Container */
+
+.numbersContainer{
+    /* position: relative; */
+    padding-left: var(--leftMargin);
+    margin-top: 15rem;
+    background-color: var(--subColor1);
+    color: var(--bgColor1);
+    height: fit-content;
+}
+.numbers{
+    display: flex;
+    /* text-align: center; */
+}
+.num{
+    font-size: var(--mainFontSize);
+}
+.num1{
+    margin-left: 5rem;
+}
+.num2, .num3{
+    margin-left: 15rem;
+}
+.subPContainer {
+    display: flex;
+    font-size: var(--subFontSize);
+}
+.p2, .p3{
+    margin-left: 5.5rem;
+}
+
+/* services */
+
+.servHR {
+    /* width: ; */
 }
