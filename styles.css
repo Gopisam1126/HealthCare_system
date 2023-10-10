@@ -18,7 +18,7 @@
 .mainsection{
     background-color: var(--bgColor1);
     font-family: var(--mainFontFam);
-    height: 60.59rem;
+    height: 160.59rem;
 }
 .mainHead{
     font-size: var(--mainFontSize);
@@ -245,5 +245,106 @@ button:hover .button-text {
 /* services */
 
 .servHR {
-    /* width: ; */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 8.5rem;
+    margin: 10rem 0 0 0;
+    height: 0.3rem;
+    border-color: var(--subColor1);
+    border-radius: 0.5rem;
+    background-color: var(--subColor1);
+}
+.servHead{
+    text-align: center;
+    margin: 3rem 0 0 0;
+    font-family: var(--mainFontFam);
+    font-size: var(--subFontSize);
+}
+
+/* Cards */
+
+.services{
+    display: grid;
+    grid-template-columns: 28rem 28rem 28rem;
+    column-gap: 2rem;
+    margin-left: var(--leftMargin);
+    margin-top: 9rem;
+}
+.servCard {
+    padding: 0 1.2rem;
+    width: 25.875rem;
+    height: 30.875rem;
+    border-radius: 3.125rem;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+                  -20px -20px 60px #ffffff;
+}
+.cardHead{
+    margin: 4rem 0 0 2rem;
+    font-size: var(--subFontSize);
+    font-family: var(--mainFontFam);
+    text-decoration: underline;
+    text-decoration-color: var(--mainHeadC);
+    text-decoration-thickness: 0.6rem;
+}
+.cardPara{
+    font-family: var(--mainFontFam);
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Services Buttons */
+
+.servBtn{
+    cursor: pointer;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #2c9caf;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #2c9caf;
+    margin: 3rem 0 0 2rem;
+}
+.servBtn:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid --subColor1;
+    box-shadow: 4px 5px 17px -4px --subColor1;
+}
+.servBtn::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--subColor1);
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+.servBtn:hover::before {
+    width: 250%;
+}
+.btn2{
+    margin-left: 6.5rem;
+}
+.btn3 {
+    margin-top: 5rem;
+}
+.btn4{
+    margin-left: 5rem;
+}
+.btn5{
+    margin-top: 0.9rem;
+}
+.btn6{
+    margin-top: 0.7rem;
 }

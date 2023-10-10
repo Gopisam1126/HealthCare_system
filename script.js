@@ -39,51 +39,6 @@ items.forEach((item) => {
     observer.observe(item);
 })
 
-// Carousal
-
-// var imgs = $(".img");
-// var lftNav = $(".navI1");
-// var rightNav = $(".navI2");
-
-// let currentSlide = 0;
-
-// function showSlide(index) {
-//     imgs.each((img, i) => {
-//         if(img === index) {
-//             $(img).css("display", "block");
-//         } else {
-//             $(img).css("display", "none")
-//         }
-//     })
-// }
-
-// function prevSlide() {
-//     currentSlide--;
-//     if (currentSlide < 0) {
-//         currentSlide = imgs.length -1
-//     }
-//     showSlide(currentSlide);
-// }
-
-// function nextSlide() {
-//     currentSlide++;
-//     if (currentSlide >= imgs.length) {
-//         currentSlide = 0;
-//     }
-//     showSlide(currentSlide);
-// }
-
-// showSlide(currentSlide);
-
-// lftNav.on("click", prevSlide);
-// rightNav.on("click", nextSlide);
-
-// function automateSlide() {
-//     nextSlide();
-// }
-
-// const alideShowInterval = setInterval(automateSlide, 2000);
-
 // Select all slides
 const slides = document.querySelectorAll(".slide");
 
