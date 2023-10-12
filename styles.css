@@ -46,15 +46,16 @@
 
 /* Right Image */
 
-/* .rightImage{
+.rightImage{
     position: absolute;
-    left: 50rem;
+    left: 60rem;
     top: 10rem;
-    height: 50rem;
+    height: 30rem;
     width: 50rem;
+    object-fit: cover;
     background: rgb(255,255,255);
 background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(242,242,242,1) 79%, rgba(230,230,230,1) 100%);
-} */
+}
 
 /* Head Buttons */
 
@@ -185,7 +186,7 @@ button:hover .button-text {
     z-index: 2;
 }
 .sideBar{
-    margin: 10rem 3.5rem 3.5rem 3.5rem;
+    margin: 5.5rem 3.5rem 3.5rem 3.5rem;
 }
 .sli{
     list-style: none;
@@ -247,10 +248,10 @@ button:hover .button-text {
 
 .servHR {
     position: relative;
-    left: 63.3rem;
+    left: 62.8rem;
     /* transform: translate(-50%, 0); */
     width: 8.5rem;
-    margin: 10rem 0 0 0;
+    margin: 0.2rem 0 0 0;
     height: 0.3rem;
     border-color: var(--subColor1);
     border-radius: 0.5rem;
@@ -414,8 +415,9 @@ button:hover .button-text {
     line-height: 1.4;
     text-transform: uppercase;
     font-weight: 600;
-    color: #9251ac;
+    color: var(--subColor1);
     letter-spacing: 1.5px;
+    margin-top: 0.2rem;
   }
   .timeline__event__content {
     padding: 20px;
@@ -570,4 +572,40 @@ button:hover .button-text {
       left: 100%;
     }
   }
-  
+
+.timeLineHead{
+  margin: 5rem 0 0rem 62.9rem;
+}
+.timlineHR{
+  width: 12rem;
+  margin-bottom: 5rem;
+}
+.footerCOntainer{
+  text-align: center;
+}
+.footer{
+  margin-top: 5rem;
+  color: #979797;
+}
+.fParaLink{
+  color: #979797;
+}
+
+
+/* About Us */
+
+.abtHead {
+  margin: 0 0 0 62.8rem;
+  margin-top: 20rem;
+  font-size: var(--subFontSize);
+  font-family: var(--mainFontFam);
+}
+
+.mainPAraAbt{
+  font-size: var(--sideFontSize);
+  margin-left: var(--leftMargin);
+  padding-right: 8rem;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  font-family: var(--mainFontFam);
+}
