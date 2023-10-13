@@ -592,6 +592,9 @@ button:hover .button-text {
 
 /* About Us */
 
+.mainAbtContainer{
+  font-family: var(--mainFontFam);
+}
 .abtHead {
   margin: 0 0 0 62.8rem;
   margin-top: 20rem;
@@ -609,4 +612,294 @@ button:hover .button-text {
 }
 .login{
   text-decoration: none;
+}
+
+/* Login Container */
+
+.card {
+  width: 41.875rem;
+  height: 35.875rem;
+  border-radius: 1.875rem;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+  margin: 20rem 0 0rem 40rem;
+  font-family: var(--mainFontFam);
+  text-align: center;
+  padding: 2.2rem 4.2rem;
+}
+.loginCardHead{
+  text-align: center;
+  font-size: var(--subFontSize);
+}
+.loginHeadHR{
+  width: 50%;
+  margin: 2rem 0 2rem 10rem;
+  height: 0.8rem;
+  background-color: var(--subColor1);
+  border-radius: 0.5rem;
+}
+
+/* Login Inputs */
+
+.wave-group {
+  position: relative;
+  margin-top: 4rem;
+}
+
+.wave-group .input {
+  font-size: 1.3rem;
+  padding: 0.625rem 0.625rem 0.625rem 0.313rem;
+  display: block;
+  width: 22.5rem;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+}
+
+.wave-group .input:focus {
+  outline: none;
+}
+
+.wave-group .label {
+  color: #999;
+  font-size: 1.425rem;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 0.313rem;
+  top: 0.625rem;
+  display: flex;
+}
+
+.wave-group .label-char {
+  transition: 0.2s ease all;
+  transition-delay: calc(var(--index) * .05s);
+}
+
+.wave-group .input:focus ~ label .label-char,
+.wave-group .input:valid ~ label .label-char {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #5264AE;
+}
+
+.wave-group .bar {
+  position: relative;
+  display: block;
+  width: 22.5rem;
+}
+
+.wave-group .bar:before,.wave-group .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.wave-group .bar:before {
+  left: 50%;
+}
+
+.wave-group .bar:after {
+  right: 50%;
+}
+.wave-group .input:focus ~ .bar:before,
+.wave-group .input:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* Login Buttons */
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 0.75rem 1.125rem;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 3.125rem;
+  background: #b1dae7;
+  width: 2.813rem;
+  height: 2.813rem;
+  transition: all 0.3s ease;
+}
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 0.625rem;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.95);
+}
+
+/* FOrgot Pass */
+
+button.frgtPass {
+  font-size: 0.8rem;
+  color: #000;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  margin-top: 2rem;
+}
+
+button.frgtPass:focus,
+button.frgtPass:hover {
+  color: #000;
+}
+
+button.frgtPass:focus:after,
+button.frgtPass:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button.frgtPass:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+/* Sign Up Container */
+
+.signUpHead{
+  text-align: center;
+  margin-top: 10rem;
+  font-size: var(--subFontSize);
+}
+.signUpHR{
+  width: 30%;
+  height: 0.7rem;
+  background-color: var(--subColor1);
+  margin: 1.5rem 0 0 42rem;
+}
+/* Inputs */
+.inputContainer{
+  /* text-align: center; */
+  margin-left: var(--leftMargin);
+  margin-top: 10rem;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input {
+  padding: 10px;
+  height: 60px;
+  width: 500px;
+  border: 2px solid #0B2447;
+  border-top: none;
+  border-bottom: none;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+  box-shadow: 7px 7px 0px 0px #0B2447;
+  transition: all 0.5s;
+}
+
+.input:focus {
+  box-shadow: none;
+  transition: all 0.5s;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #0B2447;
+  transition: all 0.5s;
+  transform: scale(0);
+  z-index: -1;
+}
+
+.input-container .topline {
+  position: absolute;
+  content: "";
+  background-color: #0B2447;
+  width: 0rem;
+  height: 2px;
+  right: 0;
+  top: 0;
+  transition: all 0.5s;
+}
+
+.input-container input[type="text"]:focus ~ .topline {
+  width: 20rem;
+  transition: all 0.5s;
+}
+
+.input-container .underline {
+  position: absolute;
+  content: "";
+  background-color: #0B2447;
+  width: 0%;
+  height: 2px;
+  right: 10rem;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+.input-container input[type="text"]:focus ~ .underline {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.input-container input[type="text"]:focus ~ .label {
+  top: -10px;
+  transform: scale(1);
+  transition: all 0.5s;
 }
