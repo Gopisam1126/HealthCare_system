@@ -9,6 +9,11 @@
     --sideFontSize: 1.5rem;
     --leftMargin: 25rem;
     --subFontSize: 2.2rem;
+
+    --light: rgba(207, 205, 205, 0.425);
+    --primary-color: #8c00ff;
+    --duration: 0.3s;
+    --ease: ease-in-out;
 }
 *{
     margin: 0;
@@ -817,22 +822,167 @@ button.frgtPass:after {
 
 .signUpHead{
   text-align: center;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   font-size: var(--subFontSize);
 }
 .signUpHR{
   width: 30%;
   height: 0.7rem;
   background-color: var(--subColor1);
-  margin: 1.5rem 0 0 42rem;
+  margin: 1.5rem 0 3rem 12rem;
 }
 /* Inputs */
 .inputContainer{
-  /* text-align: center; */
-  margin-left: var(--leftMargin);
-  margin-top: 10rem;
+  line-height: 1.3;
+}
+.inputContainer input{
+  border: none;
+  background-color: transparent;
+  height: 1.5rem;
+  width: 20rem;
+  padding: 0rem 0.9rem;
+}
+.inputContainer input:focus{
+  border: none;
+}
+.inputContainer label {
+  font-size: var(--sideFontSize);
+}
+.IfiratName{
+  margin: 0 0 0 4rem;
+}
+.Ilastname{
+  margin-left: 4.2rem;
+}
+.password{
+  margin: 0 0 0 4.95rem;
+}
+.Iemail{
+  margin: 0 0 0 7.35rem;
+}
+.phNum{
+  margin: 0 0 0 1.2rem;
+}
+.Iage{
+  margin: 0 0 0 8.2rem;
 }
 
-.input-container {
-  position: relative;
+.underline{
+  width: 20rem;
+  background-color: #000;
+  height: 0.01rem;
+  margin-left: 12.2rem;
+}
+.cardSignUp{
+  height: 70rem;
+  width: 50rem;
+  padding-left: 10rem;
+}
+
+/* Button */
+
+.signUp{
+  margin-left: -5rem;
+}
+.loginInsted{
+  margin-left: -6rem;
+}
+
+/* Check Box @ SIgnUP */
+
+.checkBoxContainer{
+  display: flex;
+}
+.checkbox1, .checkbox2{
+  margin-top: 3rem;
+}
+.checkbox1 input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox1 label {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+}
+
+.checkbox1 label span {
+  margin-left: 0.5rem;
+}
+
+.checkbox1 svg {
+  height: 1.875rem;
+  width: 1.875rem;
+}
+
+/* svg rectangle property */
+.checkbox1 svg > rect {
+  fill: var(--light);
+  stroke: var(--subColor1);
+  /* responsive values */
+  stroke-dasharray: 400%;
+  stroke-dashoffset: 400%;
+  transition: var(--duration) stroke-dashoffset var(--ease);
+}
+
+/* svg check property */
+.checkbox1 svg path {
+  stroke: var(--primary-color);
+  /* responsive values */
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  transition: var(--duration) stroke-dashoffset var(--ease);
+}
+
+.checkbox1 input[type="checkbox"]:checked + label svg > rect,
+  .checkbox1 input[type="checkbox"]:checked + label svg path {
+  stroke-dashoffset: 0;
+}
+
+/* Repeat Code */
+
+.checkbox2 input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox2 label {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+}
+
+.checkbox2 label span {
+  margin-left: 0.5rem;
+}
+
+.checkbox2 svg {
+  height: 1.875rem;
+  width: 1.875rem;
+}
+
+/* svg rectangle property */
+.checkbox2 svg > rect {
+  fill: var(--light);
+  stroke: var(--subColor1);
+  /* responsive values */
+  stroke-dasharray: 400%;
+  stroke-dashoffset: 400%;
+  transition: var(--duration) stroke-dashoffset var(--ease);
+}
+
+/* svg check property */
+.checkbox2 svg path {
+  stroke: var(--primary-color);
+  /* responsive values */
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  transition: var(--duration) stroke-dashoffset var(--ease);
+}
+
+.checkbox2 input[type="checkbox"]:checked + label svg > rect,
+  .checkbox2 input[type="checkbox"]:checked + label svg path {
+  stroke-dashoffset: 0;
+}
+.chk2{
+  margin-left: 5rem;
 }
