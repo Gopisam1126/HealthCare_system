@@ -90,4 +90,4 @@ prevSlide.addEventListener("click", function () {
 
 // Login Page
 
-$("")
+$(".")

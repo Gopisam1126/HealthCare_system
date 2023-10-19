@@ -986,3 +986,9 @@ button.frgtPass:after {
 .chk2{
   margin-left: 5rem;
 }
+
+/* Services Page */
+
+.serMainSection{
+  font-family: var(--mainFontFam);
+}
